@@ -2,7 +2,7 @@
 sudo apt-get update -y -qq && \
 	 sudo apt-get install nginx -y
 
-echo -e "\n${blue}Setting up some minor stuff.${reset}\n"
+
 sudo service nginx start
 sudo ufw allow 'Nginx HTTP'
 sudo chown -R "$USER":"$USER" /var/www/html
